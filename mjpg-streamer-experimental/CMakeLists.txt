@@ -10,6 +10,7 @@ if("${CMAKE_BUILD_TYPE}" STREQUAL "")
 endif()
 
 SET(COMPILE_DEFINITIONS -Werror -Wall)
+SET(CMAKE_SHARED_LINKER_FLAGS "-Wl,--no-as-needed")
 
 include(CheckLibraryExists) 
 include(CheckIncludeFiles)
